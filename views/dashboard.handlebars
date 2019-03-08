@@ -1,0 +1,13 @@
+{{#unless isList}}
+<ul>
+    <li>home</li>
+    <li>about</li>
+    <li>donate</li>
+</ul>
+{{/unless}}
+
+{{#with author as |x|}}
+<h1> My name is {{x.firstName}} {{x.lastName}}</h1>
+<p>My first project was {{x.project.name}}</p>
+
+{{/with}}

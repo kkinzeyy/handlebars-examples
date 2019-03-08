@@ -1,0 +1,32 @@
+{{> header}}
+
+<h1>Hello world</h1>
+<p>check out this app</p>
+
+{{#if isDisplayName}}
+
+<p>My name is {{ name }}</p>
+
+{{else}}
+<p>No name found!</p>
+{{/if}}
+
+{{#if isAge}}
+<p>I am {{ age }} years old</p>
+{{else}}
+<p>No age provided</p>
+{{/if}}
+
+{{!-- this is how you comment things out --}}
+{{calculation 25}}
+{{#list people}}
+{{firstName}} {{lastName}}
+{{/list}}
+
+{{ isCompleted }}
+
+{{> footer}}
+
+{{{ test }}}
+
+{{ test }}
